@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Oswald';
+    src: url('../_fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor_write: white;
+    --cor_black: black;
+    --cor_yellow: yellow;
+    --cor_yellow_esc:  rgb(153, 150, 0);
+    --cor_red:  red;
+    --cor_verde: rgb(159, 129, 77);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../_imagens/fundo-4.jpeg');
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+footer {
+    color: var(--cor_yellow);
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--cor_red);
+    font-size: small;
+    padding: 2px;
+}
+
+header {
+    background-color: var(--cor_write);
+    padding: 20px 10px 20px 30px;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+
+nav{
+    background-color: var(--cor_write);
+    padding: 5px;
+}
+
+nav a {
+    padding: 5px;
+    margin: 2px;
+    color: var(--cor_verde);
+    text-decoration: none;
+    transition: 0.4s;
+    border-radius: 10px 10px 0px 0px;
+}
+
+nav a:hover {
+    color: var(--cor_write);
+    background-color: var(--cor_verde);
+}
+
+main {
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.39);
+    margin: 0px auto 0px auto;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 20px;
+    background-color: rgb(255,255,255,0.5);
+}
+
+#btn {
+    background-color: var(--cor_yellow);
+    color: var(--cor_black);
+    border-width: 0px;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#btn:hover {
+    background-color: var(--cor_yellow_esc);
+}
+
+#nome{
+    border-width: 0px;
+}
+
+main p {
+    padding: 0px;
+    margin: 5px;
+}
+
+
+table th, td {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table {
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
